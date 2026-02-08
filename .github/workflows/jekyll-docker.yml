@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write   # penting agar bisa push ke gh-pages
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
